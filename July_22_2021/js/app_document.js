@@ -5,4 +5,5 @@
 //getElementById는 element의 id라는 뜻으로 String이어야한다.
 const title = document.getElementById("title");
 
+//title의 innerText를 변경해줄때 사용
 title.innerText = "Got you!";
