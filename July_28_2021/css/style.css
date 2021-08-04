@@ -6,7 +6,7 @@ html,body {height: 100%;}
 /* img */
 .bg {z-index: -1; position: absolute; top: 0; width: 100%; height: 100%; opacity: 0.65;}
 
-#clock {color:#f0fffc; font-size: 40px; text-align: center; font-weight: 700;}
+#clock {color:#CCFFFF; font-size: 40px; text-align: center; font-weight: 700;}
 
 /* name */
 #greeting {font-size: 58px; text-align: center; font-weight: 700;}
@@ -27,5 +27,5 @@ html,body {height: 100%;}
 #todo-list li button {vertical-align: middle; border: none; background: none;}
 
 /* weather */
-#weather {position: absolute; top: 20px; right: 20px; width: 180px; padding: 12px; border-radius: 8px; background-color: #111;}
+#weather {position: absolute; top: 20px; right: 20px; width: 185px; padding: 12px; border-radius: 8px; background-color: #111;}
 #weather span {line-height: 1.2; text-align: center; color: #fff;}
