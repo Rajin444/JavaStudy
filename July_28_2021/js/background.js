@@ -5,6 +5,7 @@ const chosenImage = images[Math.floor(Math.random() * images.length)];
 
 const bgImage = document.createElement("img");
 
+bgImage.className = "bg";
 bgImage.src = `img/${chosenImage}`;
 
 //append는 뒤에, prepend는 앞에 오게 할 수 있다.

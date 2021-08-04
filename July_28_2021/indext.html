@@ -4,28 +4,40 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css" />
         <title>Momentum App</title>
+
+        <!-- css -->        
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        
     </head>
     <body>
         <div class="wapper">
-            <!-- form의 기본동작은 submit이다. -->
-            <form id="login-form" class="hidden">
-                <input required maxlength="15" type="text" placeholder="What is your name?" />
-                <input type="submit" value="Log In">
-            </form>
-            <h2 id="clock">00:00:00</h2>
-            <h1 id="greeting" class="hidden"></h1>
-            
-            <!-- To Do -->
-            <form id="todo-form">
-                <input type="text" placeholder="Write a To Do and Press Enter" required />
-            </form>
-            <ul id="todo-list"></ul>
-            
-            <!-- 명언 -->
-            <div id="quote">
-                <span></span><br/>
+            <div class="fombox">
+                <!-- form의 기본동작은 submit이다. -->
+                <form id="login-form" class="hidden">
+                    <input required maxlength="15" type="text" placeholder="What is your name?" />
+                    <input type="submit" value="Log In">
+                </form>
+                <h2 id="clock">00:00:00</h2>
+                <h1 id="greeting" class="hidden"></h1>
+
+                <!-- 명언 -->
+                <div id="quote">
+                    <span></span><br/>
+                    - <span></span> -
+                </div>
+
+                <!-- To Do -->
+                <form id="todo-form">
+                    <input type="text" placeholder="Write a To Do and Press Enter" required />
+                </form>
+                <ul id="todo-list"></ul>
+            </div>
+
+            <!-- 날씨API -->
+            <div id="weather">
+                <span></span>
                 <span></span>
             </div>
 
@@ -35,6 +47,7 @@
             <script src="js/quotes.js"></script>
             <script src="js/background.js"></script>
             <script src="js/todo.js"></script>
+            <script src="js/weather.js"></script>
         </div>
     </body>
 </html>

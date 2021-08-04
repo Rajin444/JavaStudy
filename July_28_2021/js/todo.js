@@ -15,6 +15,7 @@ function saveToDos(){
 //btn을 통해서 삭제할 수 있는 기능
 function deleteToDo(event){
     const list = event.target.parentElement;
+    toDos = toDos.filter(toDo => toDo.id !== parseInt(list.id));
     list.remove();
 }
 
@@ -59,3 +60,5 @@ if(savedToDos !== null){
     //parsedToDos.forEach((item) => console.log("this is the turn of", item));
     parsedToDos.forEach(paintToDo);
 }
+
+//array에서는 지우고 싶은 객체를 삭제가 아닌 제외하고 새로운 array를 생성한다.
