@@ -8,18 +8,21 @@
 
         <!-- css -->        
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/respond.css" />
         <link rel="stylesheet" href="css/reset.css" />
         
     </head>
     <body>
         <div class="wapper">
             <div class="fombox">
+                <h2 id="clock">00:00:00</h2>
+                
                 <!-- form의 기본동작은 submit이다. -->
                 <form id="login-form" class="hidden">
-                    <input required maxlength="15" type="text" placeholder="What is your name?" />
-                    <input type="submit" value="Log In">
+                    <input class="log_txt" required maxlength="15" type="text" placeholder="What is your name?" />
+                    <input class="btn" type="submit" value="Log In">
                 </form>
-                <h2 id="clock">00:00:00</h2>
+
                 <h1 id="greeting" class="hidden"></h1>
 
                 <!-- 명언 -->
@@ -32,7 +35,9 @@
                 <form id="todo-form">
                     <input type="text" placeholder="Write a To Do and Press Enter" required />
                 </form>
-                <ul id="todo-list"></ul>
+                <ul id="todo-list">
+                    <span>TODO-LIST</span>
+                </ul>
             </div>
 
             <!-- 날씨API -->
