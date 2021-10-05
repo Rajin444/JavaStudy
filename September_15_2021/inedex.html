@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Clone Coding Youtube</title>
+        <!-- css -->
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/notosans.css" />
+        <link rel="stylesheet" href="css/common.css"/>
+
+        <!-- js -->
+        <script src="https://kit.fontawesome.com/3c916842d0.js" crossorigin="anonymous"></script>
+	</head> 
+	<body>
+        <!-- 작업 전 wireframe 만들기 --> 
+        <!-- icon은 fontawesome에서 받으면된다. -->
+        <!-- Header -->
+        <div id="header" class="header">
+            <div class="logo">
+                <i class="fab fa-youtube"></i>
+                <span class="title">Youtube</span>
+            </div>
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+
+        <!-- Video Player -->
+        <div class="player">
+            <video autoplay src="video/jam.mp4"></video>
+        </div>
+
+        <div class="infoAndUpNext">
+            <!-- Video Info -->
+            <div class="info">
+                <!-- metadata -->
+                <div class="metadata">
+                    <ul class="hashtags">
+                        <li>#잠골버스</li>
+                        <li>#잠골버스콘서트</li>
+                        <li>#콘서트영상</li>
+                    </ul>
+                    <div class="titleAndButton">
+                        <span class="title clamp">Youtube Moblie Website | 2019 잠골버스 콘서트 영상_"데이브레이크 - 네가있어 좋다" </span>
+                        <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
+                    </div>
+                    <span class="views">1M views 1month ago</span>
+                    
+                </div>
+                <!-- Actions -->
+                <div class="actions">
+                    <li><button><i class="fas fa-thumbs-up active"></i><span>1K</span></button></li>
+                    <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
+                    <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
+                    <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
+
+                    <li><button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button></li>
+                </div>
+                <!-- Channel Description -->
+                <div class="channel">
+                    <div class="metadata">
+                        <img src="img/profile.jpg" alt="profile" />
+                        <div class="info">
+                            <span class="name">잠골버스 by라진</span>
+                            <span class="subscribers">1M subscribers</span>
+                        </div>
+                    </div>
+                    <button class="subscribers">subscribe</button>
+                </div>
+            </div>
+
+            <!-- upNext -->
+            <div class="upNext">
+                <span class="title"></span>
+                <ul>
+                    <li class="item">
+                        <div class="img">
+                            <img src="img/1.jpg" alt="잠골버스 라이브">
+                        </div>
+                        <div class="info">
+                            <span class="title">잠골버스 정규방송[2020.10.22일 목요일]</span>
+                            <span class="name">by 라진</span>
+                            <span class="views">120K views</span>
+                        </div>
+                        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                    </li>
+                    <li class="item">
+                        <div class="img">
+                            <img src="img/2.jpg" alt="잠골버스 라이브">
+                        </div>
+                        <div class="info">
+                            <span class="title">잠골버스-이별이 처음인 그대에게</span>
+                            <span class="name">by 라진</span>
+                            <span class="views">80K views</span>
+                        </div>
+                        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                    </li>
+                    <li class="item">
+                        <div class="img">
+                            <img src="img/3.jpg" alt="잠골버스 라이브">
+                        </div>
+                        <div class="info">
+                            <span class="title">잠골버스-넌 괜찮아</span>
+                            <span class="name">by 라진</span>
+                            <span class="views">100K views</span>
+                        </div>
+                        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script src="js/main.js"></script>
+	</body> 
+</html>
+

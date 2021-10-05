@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+body {font-family: Arial, Helvetica, sans-serif; font-size: 16px;}
+.hide {position: absolute; overflow: hidden; width: 1px; height: 1px; margin: -1px; clip: rect(0,0,0,0); font-size: 1px;}
+
+/* header */
+.header {display: flex; justify-content: space-between; width: 100%; min-height: 56px; color: #fff; background-color: #001a33;}
+.header .logo {display: inline-block; text-align: left; font-size: 24px; font-weight: bold; padding: 12px;}
+.fa-accusoft {color: #FFCC00;}
+
+/* gnb */
+.gnb {display: flex; justify-content: space-between; margin: 0 auto; padding: 12px 0;}
+.gnb li {display: inline-block; padding: 0 20px;}
+.gnb li a {color: #fff;}
+
+/* sns */
+.sns {display: flex; justify-content: space-between; right: 0; padding: 12px 0;}
+.sns li {display: inline-block; padding: 0 15px;}
+.sns li a {color:#fff;}

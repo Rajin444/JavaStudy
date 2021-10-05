@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documnet</title>
+        <!--
+            asyn: blean타입의 속성값을 사용하는 것으로 사용하는 것만으로도 true로 속성된다.
+            asyn를 사용하면 body끝에 사용하는 것보다 fetching이 병렬적으로 이루어져 다운로드 받는 법을 절약됨
+            대신 parsing Html이 이루어 지기 이전에 작업이 이루어지기 때문에 querySelecter를 이용한 dom를 조작해야하는 작업에서는
+            html을 정의하기 이전에 작업이 이루어져있을 수도 있으며, page는 기다려야한다.
+        -->
+        <!--
+            defer: 필요한 js를 다운받으면서 사용자에게 page를 보여준 뒤, js를 실행시켜준다. 
+            가장 좋은 옵셥
+        -->
+        <script src="main.js"></script>
+        <script src="variable.js"></script>
+    </head>
+    <body>
+    </body>
+</html>
