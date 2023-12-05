@@ -24,7 +24,7 @@
     <div class="step-txt-wrap">
         <div class="step-txt">
             <p class="step-tit">1) 온라인 원서접수 후 사전예약금 납부</p>
-            <a class="bt-gray-s" onclick="alert('원서접수는 PC 페이지에서 이용 가능합니다.');" location.href='https://russelgn.megastudy.net/russel/apply/yonhab/apply.asp?app_cd=158';>원서접수 바로가기</a>
+            <a class="bt-gray-s" onclick="alert('원서접수는 PC 페이지에서 이용 가능합니다.');" location.href='https://coregj.megastudy.net/russel/apply/jaejung/apply.asp?app_cd=164';>원서접수 바로가기</a>
         </div>
         <div class="step-txt">
             <p class="step-tit" style="display: inline-block;margin-right: 5px;">2) 입학기준 확인 후 성적표 제출</p>

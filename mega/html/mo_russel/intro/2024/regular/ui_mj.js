@@ -2,15 +2,14 @@ $(function(){
 	fixmenu();
 	system();
 	manageSlide();
+	teacherSwiper();
+	bajaSlide();
+	programSlide();
+	contScroll();
 	rollSlide('.s-slide.type01', '.p-type01')
 	rollSlide('.s-slide.type02', '.p-type02')
 	rollSlide('.s-slide.type03', '.p-type03')
-	teacherSwiper();
-	studyHallSlide();
-	programSlide();
-	contScroll();
-	rollingSlide('.js-rolling.type01', '.roll-type01');
-	rollingSlide('.js-rolling.type02', '.roll-type02');
+	rollingSlide01()
 	//rollingSlide02()
 	rollingSlide03()
 	rollingSlide04()
@@ -74,17 +73,12 @@ function fixmenu(){
 		if(contName == true){
 			var gtop = $('.cont01 .graph-wrap').offset().top - 150;
 			var graph = $('cont01 .graph');
-			var rolling = $('.cont01 .js-rolling');
 
 			//화살표 애니메이션 실행
 			if(scroll >= gtop && gStart == true) {
 				$('.cont01 .graph').addClass('on')
 				gStart = false
 			}
-			// if(scroll >= gtop && rolling == true) {
-			// 	rollingSlide01();
-			// 	gStart = false
-			// }
 			if($('.cont02').hasClass('active')) {
 				$('.cont01 .graph').removeClass('on')
 				gStart = true
@@ -123,11 +117,10 @@ $(function(){
 
 
 // cont01 그래프 슬라이드
-function rollingSlide(jSlide,paging){
-	var rSlide = new Swiper(jSlide, {
+function rollingSlide01(){
+	var rSlide01 = new Swiper(".rolling01", {
 		loop: true,
 		slidesPerView: 1,
-		spaceBetween: 20, 
 		autoHeight: true,
 		speed : 500,
 		allowTouchMove: true,
@@ -135,45 +128,47 @@ function rollingSlide(jSlide,paging){
 			delay: 4000,
 			disableOnInteraction: false,
 		},
+		observer: true,
+		observeParents: true,	
 		pagination: {
-			el: paging,
+			el: ".swiper-pagination",
 			clickable: true
 		}
 	});
 	
-	// var rSlide02 = new Swiper(".rolling02", {
-	// 	loop: true,
-	// 	slidesPerView: 1,
-	// 	spaceBetween: 20, 
-	// 	autoHeight: true,
-	// 	speed : 500,
-	// 	allowTouchMove: true,
-	// 	autoplay:{
-	// 		delay: 4000,
-	// 		disableOnInteraction: false,
-	// 	},
-	// 	observer: true,
-	// 	observeParents: true,	
-	// 	pagination: {
-	// 		el: ".swiper-pagination",
-	// 		clickable: true
-	// 	}
-	// });
+	var rSlide02 = new Swiper(".rolling02", {
+		loop: true,
+		slidesPerView: 1,
+		autoHeight: true,
+		speed : 500,
+		allowTouchMove: true,
+		autoplay:{
+			delay: 4000,
+			disableOnInteraction: false,
+		},
+		observer: true,
+		observeParents: true,	
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true
+		}
+	});
 
 	//  스크롤 떨림 현상 방지
 	$(window).scroll(function(){
 		var scroll = $(window).scrollTop();
-		let con01 = $(".cont01");
+		let con01 = $(".cont01")
 		let conTop01 = con01.offset().top-150;
 		let conTop02 = $(".cont02").offset().top-150;
+		
 		if (scroll >= conTop01 && scroll <= conTop02) {
 			con01.addClass('on')
-			rSlide.autoplay.start();
-			// rSlide02.autoplay.start();
+			rSlide01.autoplay.start();
+			rSlide02.autoplay.start();
 		} else {
 			con01.removeClass('on')
-			rSlide.autoplay.stop();
-			// rSlide02.autoplay.stop();
+			rSlide01.autoplay.stop();
+			rSlide02.autoplay.stop();
 		}
 	})
 }
@@ -183,7 +178,6 @@ function rollingSlide03(){
 	var rSlide03 = new Swiper(".rolling03", {
 		loop: true,
 		slidesPerView: 1,
-		spaceBetween: 10, 
 		autoHeight: true,
 		speed : 500,
 		allowTouchMove: true,
@@ -242,20 +236,21 @@ function system(){
 	}
 }
 
-//바자관 탭슬라이드
-function studyHallSlide(){
-	var stuSlideNav = new Swiper('.studyHall-navi', {
+// cont03 바자관 슬라이드
+function bajaSlide(){
+	var bajaSlideNav = new Swiper('.studyHall-navi', {
 		slidesPerView: 4,
 		freeMode: true,
 		watchSlidesVisibility: true,
 		watchSlidesProgress: true,
 		allowTouchMove:false,
-	});	
-	var slideCont = new Swiper('.studyHall-slide', {
+	})
+
+	var bajaCont = new Swiper('.studyHall-slide', {
 		loop: true,
-		// centeredSlides: true,
+		centeredSlides: true,
 		slidesPerView: "auto",
-		spaceBetween: 10, 
+		spaceBetween: 10,
 		autoHeight: true,
 		speed : 500,
 		allowTouchMove: true,
@@ -264,11 +259,10 @@ function studyHallSlide(){
 			disableOnInteraction: false,
 		},
 		thumbs: {
-			swiper: stuSlideNav
+			swiper: bajaSlideNav
 		},
+	})
 
-	});
-	
 	//스크롤 떨림 현상 방지
 	$(window).scroll(function(){
 
@@ -279,21 +273,22 @@ function studyHallSlide(){
 		
 		if (scroll >= con03Top && scroll <= con04Top) {
 			con03.addClass('on')
-			slideCont.autoplay.start();
+			bajaCont.autoplay.start();
 		} else {
 			con03.removeClass('on')
-			slideCont.autoplay.stop();
+			bajaCont.autoplay.stop();
 
 		}
 	})
 
 	//section3 바자관 롤링 내 이미지 클릭 시 딤드처리
 	$('.bt-tt').on('click',function(){
-		slideCont.autoplay.stop()
+		bajaCont.autoplay.stop()
 		$('.layer-tt').addClass('on')
+		$('.mask-bg').css('display','block')
 	})
 	$('.bt-close-tt').on('click',function(){
-		slideCont.autoplay.start()
+		bajaCont.autoplay.start()
 		$('.layer-tt').removeClass('on')
 		$('.mask-bg').css('display','none')
 	})
@@ -322,7 +317,7 @@ function teacherSwiper() {
 	});
 }
 
-// cont05 입시관리 탭슬라이드
+// cont05 관리 탭슬라이드
 function manageSlide(){
 	var manageSlideNav = new Swiper('.manage-slide-navi', {
 		slidesPerView: 3,
@@ -336,7 +331,7 @@ function manageSlide(){
 		centeredSlides: true,
 		slidesPerView: "auto",
 		spaceBetween: 20, 
-		//autoHeight: true,
+		autoHeight: true,
 		speed : 500,
 		allowTouchMove: true,
 		observer: true,
@@ -346,8 +341,23 @@ function manageSlide(){
 		}
 	})
 
+	//  스크롤 떨림 현상 방지
+	// $(window).scroll(function(){
+
+	// 	var scroll = $(window).scrollTop();
+	// 	let con05 = $(".cont05")
+	// 	let con05Top = con05.offset().top-150;
+	// 	let con06Top = $(".cont06").offset().top-150;
+		
+	// 	if (scroll >= con05Top && scroll <= con06Top) {
+	// 		con05.addClass('on')
+	// 	} else {
+	// 		con05.removeClass('on')
+	// 	}
+	// })
 }
-// 입시관리 슬라이드 탭 내의 슬라이드
+
+//cont05 관리 탭 슬라이드 내의 슬라이드
 function rollSlide(sSlide, paging){
 	var comSlide = new Swiper(sSlide, {
 		loop: true,
@@ -364,21 +374,23 @@ function rollSlide(sSlide, paging){
 			el: paging,
 		},
 	});
+
 	//  스크롤 떨림 현상 방지
 	$(window).scroll(function(){
-
+		var i = 0;
 		var scroll = $(window).scrollTop();
-		let cont05 = $(".cont05")
-		let cont05Top = cont05.offset().top-250;
-		let cont06Top = $(".cont06").offset().top-250;
-		
-		if (scroll >= cont05Top && scroll <= cont06Top) {
-			cont05.addClass('on')
+		let con05 = $(".cont05")
+		let conTop05 = con05.offset().top-150;
+		let conTop06 = $(".cont06").offset().top-150;
+
+		if (scroll >= conTop05 && scroll <= conTop06) {
+			con05.addClass('on')
 			comSlide.autoplay.start();
 		} else {
-			cont05.removeClass('on')
+			con05.removeClass('on')
 			comSlide.autoplay.stop();
 		}
+
 	})
 }
 

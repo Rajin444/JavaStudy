@@ -76,7 +76,12 @@
 
 
                     <!-- 원서접수 버튼 -->
+                    <% If campus_code = "CD0340" Then '코어광주 %>
+                    <a href="<%=apply_url%>" onclick="alert('원서접수는 PC 페이지에서 이용 가능합니다.')" class="btn-link mt20">온라인 원서접수</a>
+                    <% ElseIf campus_code = "CD0248" Then '평촌 %>
+                    <% Else %>
                     <a href="javascript:void(0)" onclick="javascript:alert('추후 공개됩니다.');" class="btn-link mt20"><%=apply_txt%></a>
+                    <% End If %>
                     <!-- //원서접수 버튼 -->
 
 
@@ -97,11 +102,11 @@
 
             <!-- 인트로 -->
             <% If campus_code = "INTRO" Then '인트로 %>
-            <div class="recruit-tit js-cont-wrap"><span>2025 러셀 N수 정규반</span><br>모집안내</div>
+            <div class="recruit-tit js-cont-wrap "><span>2025 러셀 N수 정규반</span><br>모집안내</div>
             <p class="recruit-txt">학원별 모집요강, 장학혜택 밎 상세 등록 방법은<br>각 학원으로 문의바랍니다.</p>
             <!--학원별 모집안내-->
-                <!-- #include virtual = "/inc/campus_list_link.asp" -->
-                <!--//학원별 모집안내-->
+            <!-- #include virtual = "/inc/campus_list_link.asp" -->
+            <!--//학원별 모집안내-->
             <% End If %>
             
             <div class="mask-bg" style="display: none;"></div>

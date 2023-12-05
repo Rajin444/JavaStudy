@@ -444,9 +444,9 @@
             <div class="swiper-slide">
                 <dl class="t-name">
                     <dt>국어</dt>
-                    <dd><strong>최인호</strong> 선생님</dd>
+                    <dd><strong>류현준</strong> 선생님</dd>
                 </dl>
-                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/ko_cih.png" alt=""></span>
+                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/ko_rhj.png" alt=""></span>
             </div>
             <div class="swiper-slide">
                 <dl class="t-name">
@@ -455,13 +455,76 @@
                 </dl>
                 <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/ko_sys.png" alt=""></span>
             </div>
+            <div class="swiper-slide">
+                <dl class="t-name">
+                    <dt>국어</dt>
+                    <dd><strong>심찬우</strong> 선생님</dd>
+                </dl>
+                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/ko_scw03.png" alt=""></span>
+            </div>
+            <div class="swiper-slide">
+                <dl class="t-name">
+                    <dt>국어</dt>
+                    <dd><strong>정미나</strong> 선생님</dd>
+                </dl>
+                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/ko_jmn.png" alt=""></span>
+            </div>
+            <div class="swiper-slide">
+                <dl class="t-name">
+                    <dt>국어</dt>
+                    <dd><strong>최인호</strong> 선생님</dd>
+                </dl>
+                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/ko_cih.png" alt=""></span>
+            </div>
             <!-- 수학 -->
+            <div class="swiper-slide">
+                <dl class="t-name">
+                    <dt>수학</dt>
+                    <dd><strong>김형민</strong> 선생님</dd>
+                </dl>
+                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/math_khm.png" alt=""></span>
+            </div>
+            <div class="swiper-slide">
+                <dl class="t-name">
+                    <dt>수학</dt>
+                    <dd><strong>김성은</strong> 선생님</dd>
+                </dl>
+                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/math_kse.png" alt=""></span>
+            </div>
+            <div class="swiper-slide">
+                <dl class="t-name">
+                    <dt>수학</dt>
+                    <dd><strong>박주혁</strong> 선생님</dd>
+                </dl>
+                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/math_pjh.png" alt=""></span>
+            </div>
+            <div class="swiper-slide">
+                <dl class="t-name">
+                    <dt>수학</dt>
+                    <dd><strong>손원재</strong> 선생님</dd>
+                </dl>
+                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/math_swj.png" alt=""></span>
+            </div>
             <div class="swiper-slide">
                 <dl class="t-name">
                     <dt>수학</dt>
                     <dd><strong>양승진</strong> 선생님</dd>
                 </dl>
                 <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/math_ysj.png" alt=""></span>
+            </div>
+            <div class="swiper-slide">
+                <dl class="t-name">
+                    <dt>수학</dt>
+                    <dd><strong>윤성욱</strong> 선생님</dd>
+                </dl>
+                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/math_ysw.png" alt=""></span>
+            </div>
+            <div class="swiper-slide">
+                <dl class="t-name">
+                    <dt>수학</dt>
+                    <dd><strong>이용욱</strong> 선생님</dd>
+                </dl>
+                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/math_lyw03.png" alt=""></span>
             </div>
             <div class="swiper-slide">
                 <dl class="t-name">
@@ -473,17 +536,18 @@
             <div class="swiper-slide">
                 <dl class="t-name">
                     <dt>수학</dt>
-                    <dd><strong>김성은</strong> 선생님</dd>
+                    <dd><strong>조성훈</strong> 선생님</dd>
                 </dl>
-                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/math_kse.png" alt=""></span>
+                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/math_jsh.png" alt=""></span>
             </div>
+            
             <!-- 영어 -->
             <div class="swiper-slide">
                 <dl class="t-name">
                     <dt>영어</dt>
-                    <dd><strong>조정식</strong> 선생님</dd>
+                    <dd><strong>김선덕</strong> 선생님</dd>
                 </dl>
-                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/eng_jjs.png" alt=""></span>
+                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/eng_ksd.png" alt=""></span>
             </div>
             <div class="swiper-slide">
                 <dl class="t-name">
@@ -491,6 +555,20 @@
                     <dd><strong>김기철</strong> 선생님</dd>
                 </dl>
                 <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/eng_kkc.png" alt=""></span>
+            </div>
+            <div class="swiper-slide">
+                <dl class="t-name">
+                    <dt>영어</dt>
+                    <dd><strong>심규석</strong> 선생님</dd>
+                </dl>
+                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/eng_sgs.png" alt=""></span>
+            </div>
+            <div class="swiper-slide">
+                <dl class="t-name">
+                    <dt>영어</dt>
+                    <dd><strong>조정식</strong> 선생님</dd>
+                </dl>
+                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/eng_jjs.png" alt=""></span>
             </div>
             <!-- 사회 -->
             <div class="swiper-slide">
@@ -502,7 +580,7 @@
             </div>
             <div class="swiper-slide">
                 <dl class="t-name">
-                    <dt>동아시아사/세계사/<br>한국사</dt>
+                    <dt>동아시아사/세계사</dt>
                     <dd><strong>이다지</strong> 선생님</dd>
                 </dl>
                 <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/soc_ldj02.png" alt=""></span>
@@ -532,16 +610,30 @@
             <div class="swiper-slide">
                 <dl class="t-name">
                     <dt>물리학</dt>
+                    <dd><strong>강민웅</strong> 선생님</dd>
+                </dl>
+                <span class="t-img b-blue"><img src="<%=Application("img_path_russel")%>/teacher/slide/sci_kmw.png" alt=""></span>
+            </div>
+            <div class="swiper-slide">
+                <dl class="t-name">
+                    <dt>물리학</dt>
+                    <dd><strong>강신영</strong> 선생님</dd>
+                </dl>
+                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/sci_ksy02.png" alt=""></span>
+            </div>
+            <div class="swiper-slide">
+                <dl class="t-name">
+                    <dt>물리학</dt>
                     <dd><strong>김성재</strong> 선생님</dd>
                 </dl>
                 <span class="t-img b-blue"><img src="<%=Application("img_path_russel")%>/teacher/slide/sci_ksj.png" alt=""></span>
             </div>
             <div class="swiper-slide">
                 <dl class="t-name">
-                    <dt>물리학</dt>
-                    <dd><strong>강민웅</strong> 선생님</dd>
+                    <dt>화학</dt>
+                    <dd><strong>김재권</strong> 선생님</dd>
                 </dl>
-                <span class="t-img b-blue"><img src="<%=Application("img_path_russel")%>/teacher/slide/sci_kmw.png" alt=""></span>
+                <span class="t-img b-blue"><img src="<%=Application("img_path_russel")%>/teacher/slide/sci_kjg.png" alt=""></span>
             </div>
             <div class="swiper-slide">
                 <dl class="t-name">
@@ -563,6 +655,13 @@
                     <dd><strong>황민준</strong> 선생님</dd>
                 </dl>
                 <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/sci_hmj.png" alt=""></span>
+            </div>
+            <div class="swiper-slide">
+                <dl class="t-name">
+                    <dt>지구과학</dt>
+                    <dd><strong>양이석</strong> 선생님</dd>
+                </dl>
+                <span class="t-img"><img src="<%=Application("img_path_russel")%>/teacher/slide/sci_yis.png" alt=""></span>
             </div>
             <div class="swiper-slide">
                 <dl class="t-name">
@@ -589,5 +688,7 @@
         </div>      
         <% End If %>
     </div>
+    <% If campus_code = "INTRO" Then '인트로 %>
     <p class="r-txt">* 학원 홈페이지에서 학원별 출강 선생님을 확인할 수 있습니다.</p>
+    <% End If %>
 </div>
